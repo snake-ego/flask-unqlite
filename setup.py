@@ -9,7 +9,7 @@ requirements = [
 
 setup(
     name='Flask-UnQLite',
-    version='0.5',
+    version='0.5.1',
     license='MIT',
     url='https://github.com/snakeego/flask-unqlite',
     author='Snake',

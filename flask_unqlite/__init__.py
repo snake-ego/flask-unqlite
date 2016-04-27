@@ -4,7 +4,7 @@ from os import path as op
 from .storage import KVStorage
 
 __all__ = ['UnqliteKV']
-__version__ = '0.5'
+__version__ = '0.5.1'
 
 
 class UnqliteKV(object):
@@ -21,4 +21,4 @@ class UnqliteKV(object):
         if not op.exists(op.dirname(kvs)):
             raise ValueError("Coudn't find directory: '{}'".format(op.dirname(kvs)))
 
-        app.kvs = KVStorage(kvs)
+        app.extensions.kvstorage = KVStorage(kvs)
