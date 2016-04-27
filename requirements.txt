@@ -1,0 +1,12 @@
+# -- Develop ---
+
+ipython
+debug
+
+
+# -- Production --
+
+Flask
+
+cython
+unqlite
