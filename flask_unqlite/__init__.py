@@ -21,4 +21,4 @@ class UnqliteKV(object):
         if not op.exists(op.dirname(kvs)):
             raise ValueError("Coudn't find directory: '{}'".format(op.dirname(kvs)))
 
-        app.extension['kvstorage'] = KVStorage(kvs)
+        app.extensions['kvstorage'] = KVStorage(kvs)
